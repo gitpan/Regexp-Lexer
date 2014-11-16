@@ -27,7 +27,7 @@ no_index:
 provides:
   Regexp::Lexer:
     file: lib/Regexp/Lexer.pm
-    version: '0.01'
+    version: '0.02'
   Regexp::Lexer::TokenType:
     file: lib/Regexp/Lexer/TokenType.pm
 requires:
@@ -37,5 +37,5 @@ resources:
   bugtracker: https://github.com/moznion/Regexp-Lexer/issues
   homepage: https://github.com/moznion/Regexp-Lexer
   repository: git://github.com/moznion/Regexp-Lexer.git
-version: '0.01'
+version: '0.02'
 x_authority: cpan:MOZNION

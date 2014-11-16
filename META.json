@@ -57,7 +57,7 @@
    "provides" : {
       "Regexp::Lexer" : {
          "file" : "lib/Regexp/Lexer.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       },
       "Regexp::Lexer::TokenType" : {
          "file" : "lib/Regexp/Lexer/TokenType.pm"
@@ -74,6 +74,6 @@
          "web" : "https://github.com/moznion/Regexp-Lexer"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_authority" : "cpan:MOZNION"
 }
