@@ -9,7 +9,7 @@ use parent qw(Exporter);
 
 our @EXPORT_OK = qw(tokenize);
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 my %escapedSpecialChar = (
     t => Regexp::Lexer::TokenType::EscapedTab,
@@ -165,7 +165,7 @@ sub tokenize {
             if ($c eq 'n') {
                 $type = Regexp::Lexer::TokenType::Newline;
             }
-            elsif ($c eq 'r') {
+            elsif ($c eq 'r') { # XXX maybe unreachable
                 $type = Regexp::Lexer::TokenType::Return;
             }
 
@@ -254,9 +254,8 @@ which has minimum meaning.
 
 Tokenizes the regular expression.
 
-This function takes a argument as C<Regexp>, namely it must be regexp quoted variable (i.e. C<qr/SOMETHING/>).
+This function takes an argument as C<Regexp>, namely it must be regexp quoted variable (i.e. C<qr/SOMETHING/>).
 If not C<Regexp> argument is given, this function throws exception.
-And invalid syntax regular expression is given, also this function throws exception.
 
 This function returns the result like so;
 
@@ -283,7 +282,7 @@ This function returns the result like so;
         modifiers => ['^', 'i'],
     }
 
-C<tokens> is the token list. Information C<type> of token is located in the L<Regexp::Lexer::TokenType>.
+C<tokens> is the tokens list. Information about C<type> of token is located in the L<Regexp::Lexer::TokenType>.
 
 C<modifiers> is the list of modifiers of regular expression. Please see also L<perlre>.
 
