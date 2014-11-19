@@ -44,7 +44,7 @@
       "runtime" : {
          "requires" : {
             "parent" : "0",
-            "perl" : "5.008001"
+            "perl" : "5.010001"
          }
       },
       "test" : {
@@ -57,7 +57,7 @@
    "provides" : {
       "Regexp::Lexer" : {
          "file" : "lib/Regexp/Lexer.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       },
       "Regexp::Lexer::TokenType" : {
          "file" : "lib/Regexp/Lexer/TokenType.pm"
@@ -74,6 +74,6 @@
          "web" : "https://github.com/moznion/Regexp-Lexer"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_authority" : "cpan:MOZNION"
 }

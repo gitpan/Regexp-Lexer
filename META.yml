@@ -27,15 +27,15 @@ no_index:
 provides:
   Regexp::Lexer:
     file: lib/Regexp/Lexer.pm
-    version: '0.03'
+    version: '0.04'
   Regexp::Lexer::TokenType:
     file: lib/Regexp/Lexer/TokenType.pm
 requires:
   parent: '0'
-  perl: '5.008001'
+  perl: '5.010001'
 resources:
   bugtracker: https://github.com/moznion/Regexp-Lexer/issues
   homepage: https://github.com/moznion/Regexp-Lexer
   repository: git://github.com/moznion/Regexp-Lexer.git
-version: '0.03'
+version: '0.04'
 x_authority: cpan:MOZNION
